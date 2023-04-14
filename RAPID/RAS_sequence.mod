@@ -1,2 +1,0 @@
-MODULE RAS_sequence
-ENDMODULE

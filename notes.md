@@ -32,3 +32,4 @@ IO card: 3HAC025917-001/00 DSQC 652
 References
 
 [](https://forums.robotstudio.com/discussion/9287/guide-how-to-set-up-i-o-on-an-abb-robot-with-an-irc5-controller)
+[Manejo de señales Digitales Robot Studio Modulo I/O - Felipe Gonzalez - Robotica Plastilina UNAL](https://www.youtube.com/watch?v=p6UeCqhBiWE)
