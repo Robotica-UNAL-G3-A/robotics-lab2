@@ -24,8 +24,7 @@ SIO.cfg
 MOC.cfg
 
 
->>TASK1: (T_ROB1,Ra,)
-PROGMOD\RAS_sequence.mod @ 
+>>TASK1: (T_ROB1,RAPID,)
 SYSMOD\user.sys @ 
 SYSMOD\LINKEDM.sys @ HIDDEN
 PROGMOD\Module1.mod @ 

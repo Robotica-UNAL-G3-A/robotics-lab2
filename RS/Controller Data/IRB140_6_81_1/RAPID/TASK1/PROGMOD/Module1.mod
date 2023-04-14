@@ -1,14 +1,10 @@
 MODULE Module1
-    CONST jointtarget HOME:=[[0,0,0,0,30,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-    
-    CONST robtarget Tar_initial_approach:=[[0,0,300],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-    
+    CONST robtarget TarEdge50:=[[-80,-125,60],[0,1,0,0],[0,-1,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarEdge10:=[[-80,-125,10],[0,1,0,0],[0,-1,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarEdge20:=[[80,-125,10],[0,1,0,0],[0,-1,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarEdge30:=[[80,125,10],[0,1,0,0],[0,-1,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarEdge40:=[[-80,125,10],[0,1,0,0],[0,-1,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-    CONST robtarget TarEdge50:=[[-80,-125,60],[0,1,0,0],[0,-1,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-    
+    CONST jointtarget HOME:=[[0,0,0,0,30,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarB_approach:=[[-31.296787387,-95.58403701,65],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarB10:=[[-31.296787387,-95.58403701,15],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarB20:=[[28.703212613,-95.58403701,15],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
@@ -27,8 +23,6 @@ MODULE Module1
     CONST robtarget TarB150:=[[-31.296787387,-79.684523234,15],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarB160:=[[-31.296787387,-95.58403701,15],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarB_depart:=[[-31.296787387,-95.58403701,65],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-    
-    
     CONST robtarget TarJ10:=[[-24.927257403,-6.556484336,65],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarJ20:=[[-24.927257403,-6.556484336,15],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarJ30:=[[10.032223959,-6.556484336,15],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
@@ -49,7 +43,6 @@ MODULE Module1
     CONST robtarget TarJ180:=[[-24.927257403,-19.246921938,15],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarJ190:=[[-24.927257403,-6.556484336,15],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarJ200:=[[-24.927257403,-6.556484336,70],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-    
     CONST robtarget TarG_approach:=[[-1.345409753,35.55048487,65],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarG10:=[[-1.345409753,35.55048487,15],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarG20:=[[12.171608075,37.568313071,15],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
@@ -87,56 +80,61 @@ MODULE Module1
     CONST robtarget TarG340:=[[-14.327581552,37.592624254,15],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarG350:=[[-1.345409753,35.55048487,15],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarG_depart:=[[-1.345409753,35.55048487,65],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-    
     CONST robtarget TarUpper_approach:=[[-24.49,-87.61,65],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarUpper10:=[[-24.49,-87.61,15],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarUpper20:=[[-24.247,-73.388,15],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarUpper_inter:=[[-16.661,-66.022,15],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarUpper30:=[[-7.326,-73.048,15],[0,1,0,0],[-1,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarUpper40:=[[-6.937,-87.61,15],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-    
     CONST robtarget TarLower_approach:=[[-0.276,-87.61,65],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarLower10:=[[-0.276,-87.61,15],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarLower20:=[[0.016,-72.197,15],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget tarLower_inter:=[[10.616,-63.202,15],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarLower30:=[[21.41,-72.877,15],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget TarLower40:=[[21.896,-87.61,15],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-    
-    
-!***********************************************************
-    !
-    ! Module:  Module1
-    !
-    ! Description:
-    !   <Insert description here>
-    !
-    ! Author: Lenovo
-    !
-    ! Version: 1.0
-    !
-    !***********************************************************
-    
-    
-    !***********************************************************
-    !
-    ! Procedure main
-    !
-    !   This is the entry point of your program
-    !
-    !***********************************************************
+    CONST robtarget Tar_initial_approach:=[[0,0,300],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget toolChange:=[[-458.471148842,279.410106774,453.142387782],[0.020573484,0.976962994,0.11097234,-0.181122002],[0,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST jointtarget JointTool_intermediate:=[[90,0,0,0,30,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST jointtarget JointTool:=[[90,56,-62,0,30,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+
     PROC main()
-        !Add your code here
-        HomeP;
-        ! edge configuration [0,-1,1,0]
-        ! target configuration [0,0,0,0]
-        Intermedio;
-        Edge;
-        letterB;
-        letterJ;
-        LetterG;
-        HomeP;
+        Reset DO_indicador1; 
+        Reset DO_indicador2; 
+        WHILE TRUE DO
+            !VAR string message:="run routine";
+            
+            !WaitTime(5);
+            
+            IF DI_boton1=1 THEN ! activate routine  
+                SET DO_indicador1;
+                TPWrite("run routine");
+                HomeP;
+                Intermedio;
+                Edge;
+                letterB;
+                letterJ;
+                LetterG;
+                HomeP;
+                Reset DO_indicador1;
+            ENDIF
+            !WaitTime(5);
+            IF DI_boton2=1 THEN ! move to toolchange position
+                
+                SET DO_indicador2;
+                
+                !VAR string text:="move to toolchange position";
+                !TPWrite(message);
+                !MoveJ toolChangeIntermediate ,v1000,z100,tool_portaMarcador\WObj:=WO_placa;
+                MoveABSJ JointTool_intermediate,v500,z100,tool_portaMarcador\WObj:=WO_placa;
+                MoveABSJ JointTool,v100,z100,tool_portaMarcador\WObj:=WO_placa;
+                
+                Reset DO_indicador2;                
+            ENDIF
+        
+        ENDWHILE
         
     ENDPROC
+    
     PROC Edge()
         MoveL TarEdge50,v100,z10,tool_portaMarcador\WObj:=WO_placa;
         MoveL TarEdge10,v100,z10,tool_portaMarcador\WObj:=WO_placa;
@@ -146,14 +144,9 @@ MODULE Module1
         MoveL TarEdge10,v100,z10,tool_portaMarcador\WObj:=WO_placa;
         MoveL TarEdge50,v100,z10,tool_portaMarcador\WObj:=WO_placa;
     ENDPROC
-    
-     PROC HomeP()
-        MoveAbsJ HOME,v1000,z10,tool_portaMarcador\WObj:=WO_placa;
+    PROC HomeP()
+        MoveAbsJ HOME,v500,z10,tool_portaMarcador\WObj:=WO_placa;
     ENDPROC
-    PROC Intermedio()
-        MoveJ Tar_initial_approach,v1000,z100,tool_portaMarcador\WObj:=WO_placa;    
-    ENDPROC
-    
     PROC letterB()
         MoveL TarB_approach,v100,z10,tool_portaMarcador\WObj:=WO_placa;
         MoveL TarB10,v100,z10,tool_portaMarcador\WObj:=WO_placa;
@@ -172,12 +165,10 @@ MODULE Module1
         MoveL TarB140,v100,z10,tool_portaMarcador\WObj:=WO_placa;
         MoveL TarB150,v100,z10,tool_portaMarcador\WObj:=WO_placa;
         MoveL TarB160,v100,z10,tool_portaMarcador\WObj:=WO_placa;
-        MoveL TarB_depart,v100,z10,tool_portaMarcador\WObj:=WO_placa;   
+        MoveL TarB_depart,v100,z10,tool_portaMarcador\WObj:=WO_placa;
         upper;
         lower;
-        
     ENDPROC
-    
     PROC letterJ()
         MoveL TarJ10,v100,z10,tool_portaMarcador\WObj:=WO_placa;
         MoveL TarJ20,v100,z10,tool_portaMarcador\WObj:=WO_placa;
@@ -200,7 +191,6 @@ MODULE Module1
         MoveL TarJ190,v100,z10,tool_portaMarcador\WObj:=WO_placa;
         MoveL TarJ200,v100,z10,tool_portaMarcador\WObj:=WO_placa;
     ENDPROC
-    
     PROC LetterG()
         MoveL TarG_approach,v100,z10,tool_portaMarcador\WObj:=WO_placa;
         MoveL TarG10,v100,z10,tool_portaMarcador\WObj:=WO_placa;
@@ -238,18 +228,16 @@ MODULE Module1
         MoveL TarG330,v100,z10,tool_portaMarcador\WObj:=WO_placa;
         MoveL TarG340,v100,z10,tool_portaMarcador\WObj:=WO_placa;
         MoveL TarG350,v100,z10,tool_portaMarcador\WObj:=WO_placa;
-        MoveL TarG_depart,v100,z10,tool_portaMarcador\WObj:=WO_placa;          
+        MoveL TarG_depart,v100,z10,tool_portaMarcador\WObj:=WO_placa;
     ENDPROC
     PROC upper()
         MoveL TarUpper_approach,v100,z10,tool_portaMarcador\WObj:=WO_placa;
         MoveL TarUpper10,v100,z10,tool_portaMarcador\WObj:=WO_placa;
         MoveL TarUpper20,v100,z10,tool_portaMarcador\WObj:=WO_placa;
         MoveC TarUpper_inter,TarUpper30,v100,z10,tool_portaMarcador\WObj:=WO_placa;
-        !MoveL TarUpper30,v100,z10,tool_portaMarcador\WObj:=WO_placa;
         MoveL TarUpper40,v100,z10,tool_portaMarcador\WObj:=WO_placa;
         MoveL TarUpper10,v100,z10,tool_portaMarcador\WObj:=WO_placa;
         MoveL TarUpper_approach,v100,z10,tool_portaMarcador\WObj:=WO_placa;
-        
     ENDPROC
     PROC lower()
         MoveL TarLower_approach,v100,z10,tool_portaMarcador\WObj:=WO_placa;
@@ -258,10 +246,13 @@ MODULE Module1
         MoveC tarLower_inter,TarLower30,v100,z10,tool_portaMarcador\WObj:=WO_placa;
         MoveL TarLower40,v100,z10,tool_portaMarcador\WObj:=WO_placa;
         MoveL TarLower10,v100,z10,tool_portaMarcador\WObj:=WO_placa;
-        MoveL TarLower_approach,v100,z10,tool_portaMarcador\WObj:=WO_placa; 
+        MoveL TarLower_approach,v100,z10,tool_portaMarcador\WObj:=WO_placa;
     ENDPROC
-  
-    
- 
-    
+    PROC Intermedio()
+        MoveJ Tar_initial_approach,v1000,z100,tool_portaMarcador\WObj:=WO_placa;
+    ENDPROC
+    PROC Path_10()
+        MoveL toolChange,v100,z10,tool_portaMarcador\WObj:=WO_placa;
+        MoveAbsJ JointTool,v1000,z100,tool_portaMarcador\WObj:=wobj0;
+    ENDPROC
 ENDMODULE
