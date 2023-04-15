@@ -9,7 +9,7 @@ Para el manejo de señales se crearon la señales respectivas en el controlador.
 
 ![capture robotStudio signal creation](/media/robotStudioSignalCreation.png)
 
-#Código con estructuras de control 
+# Código con estructuras de control 
 Acontinuación se procede al programa [RAPID](/RAPID/) para programar la logica donde se ingresa a una rutina si se activa si la señal de entrada esta activada.
 
 ```
@@ -24,7 +24,9 @@ Acontinuación se procede al programa [RAPID](/RAPID/) para programar la logica 
     ENDIF 
 ```
 
+En el código se utiliza un while infinito para que se verifique de manera continua el estado de las entradas digitales (botones). Previo a cada rutina (escritura y posicionamiento para colocación de herramienta) se utiliza un if que es activado de acuerdo al botón correspondiente. Adicional a esto, cuando se ejecuta cada rutina es activado un led.
 # Resultado
-
+A continuación se presenta la simulación en RobotStudio y el video de funcionamiento del manipulador realizando ambas trayectorias:
+*Vídeos*
 # Referencias
 - [Manejo de señales Digitales Robot Studio Modulo I/O - Felipe Gonzalez - Robotica Plastilina UNAL](https://youtu.be/p6UeCqhBiWE)
