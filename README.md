@@ -4,7 +4,7 @@ Laboratorio 2 Robótica Industrial  Entradas y Salidas
 El objetivo de este laboratorio consite en controlar el comportamiento del robot mediante un panel de control.
 Donde el accionamiento de un primer boton activa la ejecución de una rutina de escritura y un segundo boton activa una rutina para posicionar el robot donde sea facil colocar la herramienta de trabajo. Igualmente se asigna indicadores que se activaran mientras se este realizando la rutina respectiva.
 
-#Configuración I/O
+# Configuración I/O
 Para el manejo de señales se crearon la señales respectivas en el controlador. Realizando click derecho sobre la lista de señales existentes. Especificadon el tipo de señal Digital Input para los botones y Digital Output para los indicadores.
 
 ![capture robotStudio signal creation](/media/robotStudioSignalCreation.png)
@@ -24,7 +24,7 @@ Acontinuación se procede al programa [RAPID](/RAPID/) para programar la logica 
     ENDIF 
 ```
 
-#Resultado
+# Resultado
 
 # Referencias
 - [Manejo de señales Digitales Robot Studio Modulo I/O - Felipe Gonzalez - Robotica Plastilina UNAL](https://youtu.be/p6UeCqhBiWE)
