@@ -34,7 +34,7 @@
       <SignalValues>
         <Element Key="boton0">
           <Value>
-            <Integer Value="0" />
+            <Integer Value="1" />
           </Value>
         </Element>
         <Element Key="boton1">
@@ -56,26 +56,42 @@
       <IOConnections>
         <Element type="TIOConnection" AllowCycle="false">
           <SourceObject ID="1141" />
-          <SourceSignal Value="DO_indicador2" />
+          <SourceSignal Value="DO_01" />
+          <TargetObject ID="1" />
+          <TargetSignal Value="indicador0" />
+          <SourceObjectName Value="IRB140_6_81_1" />
+          <TargetObjectName Value="robotics-lab2" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="1141" />
+          <SourceSignal Value="DO_03" />
           <TargetObject ID="1" />
           <TargetSignal Value="indicador1" />
           <SourceObjectName Value="IRB140_6_81_1" />
           <TargetObjectName Value="robotics-lab2" />
         </Element>
         <Element type="TIOConnection" AllowCycle="false">
-          <SourceObject ID="1141" />
-          <SourceSignal Value="DO_indicador1" />
-          <TargetObject ID="1" />
-          <TargetSignal Value="indicador0" />
-          <SourceObjectName Value="IRB140_6_81_1" />
-          <TargetObjectName Value="robotics-lab2" />
+          <SourceObject ID="1" />
+          <SourceSignal Value="boton0" />
+          <TargetObject ID="1141" />
+          <TargetSignal Value="DI_01" />
+          <SourceObjectName Value="robotics-lab2" />
+          <TargetObjectName Value="IRB140_6_81_1" />
+        </Element>
+        <Element type="TIOConnection" AllowCycle="false">
+          <SourceObject ID="1" />
+          <SourceSignal Value="boton1" />
+          <TargetObject ID="1141" />
+          <TargetSignal Value="DI_02" />
+          <SourceObjectName Value="robotics-lab2" />
+          <TargetObjectName Value="IRB140_6_81_1" />
         </Element>
       </IOConnections>
       <DataRecorderSignals>
-        <ObjectRef ID="5453" />
-        <ObjectRef ID="5454" />
-        <ObjectRef ID="5455" />
-        <ObjectRef ID="5456" />
+        <ObjectRef ID="5585" />
+        <ObjectRef ID="5586" />
+        <ObjectRef ID="5587" />
+        <ObjectRef ID="5588" />
       </DataRecorderSignals>
       <UserData Value="" />
     </Station>
@@ -3818,12 +3834,12 @@
       <Attributes>
         <Attribute Key="DesignerX">
           <Value>
-            <Double Value="180.4" />
+            <Double Value="69.2" />
           </Value>
         </Attribute>
         <Attribute Key="DesignerY">
           <Value>
-            <Double Value="22.8" />
+            <Double Value="29.2" />
           </Value>
         </Attribute>
       </Attributes>
@@ -7458,12 +7474,12 @@
       <ComponentType Value="Mechanism" />
       <ClipPlane ID="-1" />
       <JointValues>
-        <Double Value="0.991542041301727" />
-        <Double Value="1.30824685096741" />
-        <Double Value="-0.785050868988037" />
-        <Double Value="-0.954551935195923" />
-        <Double Value="0.8112433552742" />
-        <Double Value="1.59564399719238" />
+        <Double Value="0.827754437923431" />
+        <Double Value="0.911550462245941" />
+        <Double Value="0.240076899528503" />
+        <Double Value="-1.84979236125946" />
+        <Double Value="0.572421908378601" />
+        <Double Value="2.55523371696472" />
       </JointValues>
       <CalibFrames />
       <CalibFrameKnownValid />
@@ -7508,8 +7524,8 @@
       <UniqueId Value="{fb01e795-6169-4d1d-a8e3-e974237d3a30}" />
       <Definition ID="14" DocID="1" />
       <Transform>
-        <RowX X="0.547400022141878" Y="0.836871086702768" Z="0" W="0" />
-        <RowY X="-0.836871086702768" Y="0.547400022141878" Z="0" W="0" />
+        <RowX X="0.676531127834356" Y="0.736414036443613" Z="0" W="0" />
+        <RowY X="-0.736414036443613" Y="0.676531127834356" Z="0" W="0" />
         <RowZ X="0" Y="0" Z="1" W="0" />
         <RowT X="0" Y="0" Z="0" W="1" />
       </Transform>
@@ -7538,10 +7554,10 @@
       <UniqueId Value="{f37cde1c-6f39-4e23-8e3e-cad5fe07448b}" />
       <Definition ID="15" DocID="1" />
       <Transform>
-        <RowX X="0.142074118535326" Y="0.217204452250052" Z="-0.965731417509633" W="0" />
-        <RowY X="-0.836871086702768" Y="0.547400022141878" Z="0" W="0" />
-        <RowZ X="0.52864139932788" Y="0.808192700834291" Z="0.259543501623206" W="0" />
-        <RowT X="-0.157708959310955" Y="-0.24110716628198" Z="0.328241886654306" W="1" />
+        <RowX X="0.414389466486303" Y="0.451069000552488" Z="-0.790454379964952" W="0" />
+        <RowY X="-0.736414036443613" Y="0.676531127834356" Z="0" W="0" />
+        <RowZ X="0.534766993179294" Y="0.582101700574525" Z="0.6125209165361" W="0" />
+        <RowT X="-0.169888065304748" Y="-0.184925646089854" Z="0.19172444397684" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -7568,10 +7584,10 @@
       <UniqueId Value="{8591f1ab-16a1-4cda-919b-02c8bd6a388e}" />
       <Definition ID="16" DocID="1" />
       <Transform>
-        <RowX X="0.474172531365436" Y="0.724920105146694" Z="-0.499651129942283" W="0" />
-        <RowY X="-0.836871086702768" Y="0.547400022141878" Z="0" W="0" />
-        <RowZ X="0.273509039593618" Y="0.418143584087066" Z="0.866226730335309" W="0" />
-        <RowT X="0.000698391921731739" Y="0.00106770913927895" Z="-0.136342192318426" W="1" />
+        <RowX X="0.275349186189412" Y="0.299721620026999" Z="-0.913427488174743" W="0" />
+        <RowY X="-0.736414036443613" Y="0.676531127834356" Z="0" W="0" />
+        <RowZ X="0.617962128769761" Y="0.672660823565314" Z="0.407001503494496" W="0" />
+        <RowT X="-0.219390182224378" Y="-0.238809425022511" Z="0.346662383637147" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -7598,10 +7614,10 @@
       <UniqueId Value="{1cddc1a4-0ab7-4d30-b99e-35d0cc8c8ea2}" />
       <Definition ID="17" DocID="1" />
       <Transform>
-        <RowX X="0.474172531365439" Y="0.724920105146692" Z="-0.499651129942283" W="0" />
-        <RowY X="-0.706888494459859" Y="-0.024844867849133" Z="-0.70688852653147" W="0" />
-        <RowZ X="-0.524851471274269" Y="0.688384757018681" Z="0.500656927851365" W="0" />
-        <RowT X="0.569131075659667" Y="-0.19134400598803" Z="0.123943507050142" W="1" />
+        <RowX X="0.275349186189415" Y="0.299721620026996" Z="-0.913427488174743" W="0" />
+        <RowY X="-0.391265484790128" Y="-0.832960989824476" Z="-0.391263734382034" W="0" />
+        <RowZ X="-0.878119665009714" Y="0.465126799828844" Z="-0.112084405713754" W="0" />
+        <RowT X="0.845820054946608" Y="-0.0910452001221448" Z="0.71625155099342" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -7628,10 +7644,10 @@
       <UniqueId Value="{3bc6bfac-50ae-4b60-aa15-f864d1c8e6a3}" />
       <Definition ID="18" DocID="1" />
       <Transform>
-        <RowX X="0.707106796263927" Y="5.48200305705571E-08" Z="-0.707106766109165" W="0" />
-        <RowY X="-0.706888494459861" Y="-0.0248448678491356" Z="-0.706888526531468" W="0" />
-        <RowZ X="-0.0175680129108624" Y="0.999691318628684" Z="-0.0175679361567541" W="0" />
-        <RowT X="0.103124834100602" Y="-0.0867802552073548" Z="0.58627464649902" W="1" />
+        <RowX X="0.70710681867244" Y="-1.52115152951549E-06" Z="-0.707106743699016" W="0" />
+        <RowY X="-0.391265484790129" Y="-0.832960989824477" Z="-0.391263734382031" W="0" />
+        <RowZ X="-0.588991737971668" Y="0.553331717352541" Z="-0.588992990767124" W="0" />
+        <RowT X="0.445670036278157" Y="-0.0189716878686809" Z="0.962966128537343" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -7658,10 +7674,10 @@
       <UniqueId Value="{65f52e9a-9280-4c23-9888-99a0a85def5b}" />
       <Definition ID="19" DocID="1" />
       <Transform>
-        <RowX X="0.70710679626393" Y="5.48200306573025E-08" Z="-0.707106766109163" W="0" />
-        <RowY X="1.35078610460221E-07" Y="0.999999999999968" Z="2.12605848572134E-07" W="0" />
-        <RowZ X="0.707106766109152" Y="-2.45850039815726E-07" Z="0.7071067962639" W="0" />
-        <RowT X="-0.41284360856165" Y="0.625000138701496" Z="0.0703062370155131" W="1" />
+        <RowX X="0.707106818672442" Y="-1.52115152660722E-06" Z="-0.707106743699015" W="0" />
+        <RowY X="9.76599224489227E-07" Y="0.999999999998833" Z="-1.17463390547634E-06" W="0" />
+        <RowZ X="0.707106743699977" Y="1.40031746642677E-07" Z="0.707106818673102" W="0" />
+        <RowT X="-0.477152082672054" Y="0.375000395183724" Z="0.0401430642159014" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -7731,10 +7747,10 @@
         <ObjectRef ID="2178" />
       </ChildInstances>
       <Transform>
-        <RowX X="-0.707106766109152" Y="2.45850039815726E-07" Z="-0.7071067962639" W="0" />
-        <RowY X="1.35078610352733E-07" Y="0.999999999999968" Z="2.12605848611547E-07" W="0" />
-        <RowZ X="0.70710679626393" Y="5.48200306573024E-08" Z="-0.707106766109163" W="0" />
-        <RowT X="0.45477640898399" Y="0.624999991888584" Z="0.209606291409191" W="1" />
+        <RowX X="-0.707106743699977" Y="-1.40031746642677E-07" Z="-0.707106818673102" W="0" />
+        <RowY X="9.76599224315973E-07" Y="0.999999999998833" Z="-1.17463390553513E-06" W="0" />
+        <RowZ X="0.707106818672442" Y="-1.52115152660722E-06" Z="-0.707106743699015" W="0" />
+        <RowT X="0.390467930458637" Y="0.374999711493291" Z="0.179443146106157" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -8015,9 +8031,9 @@
     <PathProcedureDeclaration ID="2275" Name="main" Parent="1143" ShowName="false" ZoneVisualization="0" ShowSpeeds="false">
       <DeclarationInfo ID="2276" />
       <RoutineCalls>
-        <ObjectRef ID="5480" />
-        <ObjectRef ID="5483" />
-        <ObjectRef ID="5507" />
+        <ObjectRef ID="5567" />
+        <ObjectRef ID="5570" />
+        <ObjectRef ID="5573" />
         <ObjectRef ID="2277" />
         <ObjectRef ID="3943" />
         <ObjectRef ID="5510" />
@@ -8025,11 +8041,11 @@
         <ObjectRef ID="5514" />
         <ObjectRef ID="5516" />
         <ObjectRef ID="5458" />
-        <ObjectRef ID="5460" />
-        <ObjectRef ID="5463" />
+        <ObjectRef ID="5576" />
+        <ObjectRef ID="5579" />
         <ObjectRef ID="5520" />
         <ObjectRef ID="5535" />
-        <ObjectRef ID="5470" />
+        <ObjectRef ID="5582" />
       </RoutineCalls>
     </PathProcedureDeclaration>
     <RAPIDDeclarationInfo ID="2276" Name="" Parent="2275" Local="false" EnableSync="true">
@@ -14301,96 +14317,10 @@
     <RoutineArgument ID="5450" Name="WObj" Parent="5439" Value="WO_placa" />
     <RoutineArgument ID="5451" Name="Corr" Parent="5439" Enabled="false" />
     <RoutineArgument ID="5452" Name="TLoad" Parent="5439" Enabled="false" />
-    <DataRecorderSignal ID="5453" Name="" Parent="1">
-      <DataRecorderSignalId Value="RobotStudio.ControllerSource\{00CC3FAF-EB3C-40EB-BA59-3885DC75BF7A}\IOSignal\DI_boton1" />
-      <DataRecorderSignalDisplayPath Value="Controller Signals\#{00CC3FAF-EB3C-40EB-BA59-3885DC75BF7A}\IRB140_6_81_1\I/O System\DI_boton1" />
-      <DataRecorderSignalInfo SignalDataType="2" SignalInterpolationType="0" SignalApproximateMax="0" SignalApproximateMin="1" SignalQuantity="0">
-        <Tag Value="IOSignal" />
-        <SignalDescription Value="" />
-      </DataRecorderSignalInfo>
-      <DataRecorderSignalSourceId Value="RobotStudio.ControllerSource" />
-    </DataRecorderSignal>
-    <DataRecorderSignal ID="5454" Name="" Parent="1">
-      <DataRecorderSignalId Value="RobotStudio.ControllerSource\{00CC3FAF-EB3C-40EB-BA59-3885DC75BF7A}\IOSignal\DI_boton2" />
-      <DataRecorderSignalDisplayPath Value="Controller Signals\#{00CC3FAF-EB3C-40EB-BA59-3885DC75BF7A}\IRB140_6_81_1\I/O System\DI_boton2" />
-      <DataRecorderSignalInfo SignalDataType="2" SignalInterpolationType="0" SignalApproximateMax="0" SignalApproximateMin="1" SignalQuantity="0">
-        <Tag Value="IOSignal" />
-        <SignalDescription Value="" />
-      </DataRecorderSignalInfo>
-      <DataRecorderSignalSourceId Value="RobotStudio.ControllerSource" />
-    </DataRecorderSignal>
-    <DataRecorderSignal ID="5455" Name="" Parent="1">
-      <DataRecorderSignalId Value="RobotStudio.ControllerSource\{00CC3FAF-EB3C-40EB-BA59-3885DC75BF7A}\IOSignal\DO_indicador1" />
-      <DataRecorderSignalDisplayPath Value="Controller Signals\#{00CC3FAF-EB3C-40EB-BA59-3885DC75BF7A}\IRB140_6_81_1\I/O System\DO_indicador1" />
-      <DataRecorderSignalInfo SignalDataType="2" SignalInterpolationType="0" SignalApproximateMax="0" SignalApproximateMin="1" SignalQuantity="0">
-        <Tag Value="IOSignal" />
-        <SignalDescription Value="" />
-      </DataRecorderSignalInfo>
-      <DataRecorderSignalSourceId Value="RobotStudio.ControllerSource" />
-    </DataRecorderSignal>
-    <DataRecorderSignal ID="5456" Name="" Parent="1">
-      <DataRecorderSignalId Value="RobotStudio.ControllerSource\{00CC3FAF-EB3C-40EB-BA59-3885DC75BF7A}\IOSignal\DO_indicador2" />
-      <DataRecorderSignalDisplayPath Value="Controller Signals\#{00CC3FAF-EB3C-40EB-BA59-3885DC75BF7A}\IRB140_6_81_1\I/O System\DO_indicador2" />
-      <DataRecorderSignalInfo SignalDataType="2" SignalInterpolationType="0" SignalApproximateMax="0" SignalApproximateMin="1" SignalQuantity="0">
-        <Tag Value="IOSignal" />
-        <SignalDescription Value="" />
-      </DataRecorderSignalInfo>
-      <DataRecorderSignalSourceId Value="RobotStudio.ControllerSource" />
-    </DataRecorderSignal>
     <RsPathCallInstruction ID="5458" Name="HomeP" Parent="2275">
       <ArgumentList ID="5459" />
     </RsPathCallInstruction>
     <RoutineArgumentList ID="5459" Name="" Parent="5458" />
-    <ActionInstructionCall ID="5460" Name="Reset" Parent="2275" TrigValidity="0">
-      <ArgumentList ID="5461" />
-      <InstructionTemplateName Value="Default" />
-    </ActionInstructionCall>
-    <RoutineArgumentList ID="5461" Name="" Parent="5460">
-      <RoutineArguments>
-        <ObjectRef ID="5462" />
-      </RoutineArguments>
-    </RoutineArgumentList>
-    <RoutineArgument ID="5462" Name="Signal" Parent="5461" Value="DO_indicador1" />
-    <ActionInstructionCall ID="5463" Name="Set" Parent="2275" TrigValidity="0">
-      <ArgumentList ID="5464" />
-      <InstructionTemplateName Value="Default" />
-    </ActionInstructionCall>
-    <RoutineArgumentList ID="5464" Name="" Parent="5463">
-      <RoutineArguments>
-        <ObjectRef ID="5465" />
-      </RoutineArguments>
-    </RoutineArgumentList>
-    <RoutineArgument ID="5465" Name="Signal" Parent="5464" Value="DO_indicador2" />
-    <ActionInstructionCall ID="5470" Name="Reset" Parent="2275" TrigValidity="0">
-      <ArgumentList ID="5471" />
-      <InstructionTemplateName Value="Default" />
-    </ActionInstructionCall>
-    <RoutineArgumentList ID="5471" Name="" Parent="5470">
-      <RoutineArguments>
-        <ObjectRef ID="5472" />
-      </RoutineArguments>
-    </RoutineArgumentList>
-    <RoutineArgument ID="5472" Name="Signal" Parent="5471" Value="DO_indicador2" />
-    <ActionInstructionCall ID="5480" Name="Reset" Parent="2275" TrigValidity="0">
-      <ArgumentList ID="5481" />
-      <InstructionTemplateName Value="Default" />
-    </ActionInstructionCall>
-    <RoutineArgumentList ID="5481" Name="" Parent="5480">
-      <RoutineArguments>
-        <ObjectRef ID="5482" />
-      </RoutineArguments>
-    </RoutineArgumentList>
-    <RoutineArgument ID="5482" Name="Signal" Parent="5481" Value="DO_indicador1" />
-    <ActionInstructionCall ID="5483" Name="Reset" Parent="2275" TrigValidity="0">
-      <ArgumentList ID="5484" />
-      <InstructionTemplateName Value="Default" />
-    </ActionInstructionCall>
-    <RoutineArgumentList ID="5484" Name="" Parent="5483">
-      <RoutineArguments>
-        <ObjectRef ID="5485" />
-      </RoutineArguments>
-    </RoutineArgumentList>
-    <RoutineArgument ID="5485" Name="Signal" Parent="5484" Value="DO_indicador2" />
     <MoveInstructionCall ID="5486" Name="MoveAbsJ" Parent="2285" Thickness="2" Reachable="1">
       <ArgumentList ID="5487" />
       <GroupName Value="MoveAbs" />
@@ -14427,16 +14357,6 @@
     <RoutineArgument ID="5498" Name="Tool" Parent="5487" Value="tool_portaMarcador" />
     <RoutineArgument ID="5499" Name="WObj" Parent="5487" Value="WO_placa" />
     <RoutineArgument ID="5500" Name="TLoad" Parent="5487" Enabled="false" />
-    <ActionInstructionCall ID="5507" Name="Set" Parent="2275" TrigValidity="0">
-      <ArgumentList ID="5508" />
-      <InstructionTemplateName Value="Default" />
-    </ActionInstructionCall>
-    <RoutineArgumentList ID="5508" Name="" Parent="5507">
-      <RoutineArguments>
-        <ObjectRef ID="5509" />
-      </RoutineArguments>
-    </RoutineArgumentList>
-    <RoutineArgument ID="5509" Name="Signal" Parent="5508" Value="DO_indicador1" />
     <RsPathCallInstruction ID="5510" Name="Edge" Parent="2275">
       <ArgumentList ID="5511" />
     </RsPathCallInstruction>
@@ -14579,6 +14499,102 @@
       <TaskName Value="T_ROB1" />
       <ModuleName Value="Module1" />
     </RAPIDDeclarationInfo>
+    <ActionInstructionCall ID="5567" Name="Reset" Parent="2275" TrigValidity="0">
+      <ArgumentList ID="5568" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="5568" Name="" Parent="5567">
+      <RoutineArguments>
+        <ObjectRef ID="5569" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5569" Name="Signal" Parent="5568" Value="DO_01" />
+    <ActionInstructionCall ID="5570" Name="Reset" Parent="2275" TrigValidity="0">
+      <ArgumentList ID="5571" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="5571" Name="" Parent="5570">
+      <RoutineArguments>
+        <ObjectRef ID="5572" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5572" Name="Signal" Parent="5571" Value="DO_03" />
+    <ActionInstructionCall ID="5573" Name="Set" Parent="2275" TrigValidity="0">
+      <ArgumentList ID="5574" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="5574" Name="" Parent="5573">
+      <RoutineArguments>
+        <ObjectRef ID="5575" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5575" Name="Signal" Parent="5574" Value="DO_01" />
+    <ActionInstructionCall ID="5576" Name="Reset" Parent="2275" TrigValidity="0">
+      <ArgumentList ID="5577" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="5577" Name="" Parent="5576">
+      <RoutineArguments>
+        <ObjectRef ID="5578" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5578" Name="Signal" Parent="5577" Value="DO_01" />
+    <ActionInstructionCall ID="5579" Name="Set" Parent="2275" TrigValidity="0">
+      <ArgumentList ID="5580" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="5580" Name="" Parent="5579">
+      <RoutineArguments>
+        <ObjectRef ID="5581" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5581" Name="Signal" Parent="5580" Value="DO_03" />
+    <ActionInstructionCall ID="5582" Name="Reset" Parent="2275" TrigValidity="0">
+      <ArgumentList ID="5583" />
+      <InstructionTemplateName Value="Default" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="5583" Name="" Parent="5582">
+      <RoutineArguments>
+        <ObjectRef ID="5584" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="5584" Name="Signal" Parent="5583" Value="DO_03" />
+    <DataRecorderSignal ID="5585" Name="" Parent="1">
+      <DataRecorderSignalId Value="RobotStudio.ControllerSource\{00CC3FAF-EB3C-40EB-BA59-3885DC75BF7A}\IOSignal\DI_01" />
+      <DataRecorderSignalDisplayPath Value="Controller Signals\#{00CC3FAF-EB3C-40EB-BA59-3885DC75BF7A}\IRB140_6_81_1\I/O System\DI_01" />
+      <DataRecorderSignalInfo SignalDataType="2" SignalInterpolationType="0" SignalApproximateMax="0" SignalApproximateMin="1" SignalQuantity="0">
+        <Tag Value="IOSignal" />
+        <SignalDescription Value="" />
+      </DataRecorderSignalInfo>
+      <DataRecorderSignalSourceId Value="RobotStudio.ControllerSource" />
+    </DataRecorderSignal>
+    <DataRecorderSignal ID="5586" Name="" Parent="1">
+      <DataRecorderSignalId Value="RobotStudio.ControllerSource\{00CC3FAF-EB3C-40EB-BA59-3885DC75BF7A}\IOSignal\DI_02" />
+      <DataRecorderSignalDisplayPath Value="Controller Signals\#{00CC3FAF-EB3C-40EB-BA59-3885DC75BF7A}\IRB140_6_81_1\I/O System\DI_02" />
+      <DataRecorderSignalInfo SignalDataType="2" SignalInterpolationType="0" SignalApproximateMax="0" SignalApproximateMin="1" SignalQuantity="0">
+        <Tag Value="IOSignal" />
+        <SignalDescription Value="" />
+      </DataRecorderSignalInfo>
+      <DataRecorderSignalSourceId Value="RobotStudio.ControllerSource" />
+    </DataRecorderSignal>
+    <DataRecorderSignal ID="5587" Name="" Parent="1">
+      <DataRecorderSignalId Value="RobotStudio.ControllerSource\{00CC3FAF-EB3C-40EB-BA59-3885DC75BF7A}\IOSignal\DO_01" />
+      <DataRecorderSignalDisplayPath Value="Controller Signals\#{00CC3FAF-EB3C-40EB-BA59-3885DC75BF7A}\IRB140_6_81_1\I/O System\DO_01" />
+      <DataRecorderSignalInfo SignalDataType="2" SignalInterpolationType="0" SignalApproximateMax="0" SignalApproximateMin="1" SignalQuantity="0">
+        <Tag Value="IOSignal" />
+        <SignalDescription Value="" />
+      </DataRecorderSignalInfo>
+      <DataRecorderSignalSourceId Value="RobotStudio.ControllerSource" />
+    </DataRecorderSignal>
+    <DataRecorderSignal ID="5588" Name="" Parent="1">
+      <DataRecorderSignalId Value="RobotStudio.ControllerSource\{00CC3FAF-EB3C-40EB-BA59-3885DC75BF7A}\IOSignal\DO_03" />
+      <DataRecorderSignalDisplayPath Value="Controller Signals\#{00CC3FAF-EB3C-40EB-BA59-3885DC75BF7A}\IRB140_6_81_1\I/O System\DO_03" />
+      <DataRecorderSignalInfo SignalDataType="2" SignalInterpolationType="0" SignalApproximateMax="0" SignalApproximateMin="1" SignalQuantity="0">
+        <Tag Value="IOSignal" />
+        <SignalDescription Value="" />
+      </DataRecorderSignalInfo>
+      <DataRecorderSignalSourceId Value="RobotStudio.ControllerSource" />
+    </DataRecorderSignal>
   </Objects>
   <ReferencedDocuments>
     <DocRef ID="1" DocumentType="ComponentLibrary" Location="%ABBLIBRARY%\Robots\IRB140_6_81_C_G_03.rslib" RelativeLocation="D:\programming\robotStudio\ABB Library\Robots\IRB140_6_81_C_G_03.rslib" GUID="{412F973D-B45F-4F95-8745-B1806A470158}" />

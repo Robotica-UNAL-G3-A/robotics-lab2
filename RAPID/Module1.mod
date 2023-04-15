@@ -98,15 +98,15 @@ MODULE Module1
     CONST jointtarget JointTool:=[[90,56,-62,0,30,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
 
     PROC main()
-        Reset DO_indicador1; 
-        Reset DO_indicador2; 
+        Reset DO_01; 
+        Reset DO_03; 
         WHILE TRUE DO
             !VAR string message:="run routine";
             
             !WaitTime(5);
             
-            IF DI_boton1=1 THEN ! activate routine  
-                SET DO_indicador1;
+            IF DI_01=1 THEN ! activate routine  
+                Set DO_01;
                 TPWrite("run routine");
                 HomeP;
                 Intermedio;
@@ -115,20 +115,20 @@ MODULE Module1
                 letterJ;
                 LetterG;
                 HomeP;
-                Reset DO_indicador1;
+                Reset DO_01;
             ENDIF
             !WaitTime(5);
-            IF DI_boton2=1 THEN ! move to toolchange position
+            IF DI_02=1 THEN ! move to toolchange position
                 
-                SET DO_indicador2;
+                Set DO_03;
                 
                 !VAR string text:="move to toolchange position";
                 !TPWrite(message);
                 !MoveJ toolChangeIntermediate ,v1000,z100,tool_portaMarcador\WObj:=WO_placa;
-                MoveABSJ JointTool_intermediate,v500,z100,tool_portaMarcador\WObj:=WO_placa;
-                MoveABSJ JointTool,v100,z100,tool_portaMarcador\WObj:=WO_placa;
+                MoveAbsJ JointTool_intermediate,v500,z100,tool_portaMarcador\WObj:=WO_placa;
+                MoveAbsJ JointTool,v100,z100,tool_portaMarcador\WObj:=WO_placa;
                 
-                Reset DO_indicador2;                
+                Reset DO_03;                
             ENDIF
         
         ENDWHILE
