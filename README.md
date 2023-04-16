@@ -27,6 +27,7 @@ Acontinuación se procede al programa [RAPID](/RAPID/) para programar la logica 
 En el código se utiliza un while infinito para que se verifique de manera continua el estado de las entradas digitales (botones). Previo a cada rutina (escritura y posicionamiento para colocación de herramienta) se utiliza un if que es activado de acuerdo al botón correspondiente. Adicional a esto, cuando se ejecuta cada rutina es activado un led.
 # Resultado
 A continuación se encuentra el link del video de la simulación en RobotStudio y el video de funcionamiento del manipulador realizando ambas trayectorias:
+
 [![Alt text](https://img.youtube.com/vi/g3UhogHW9Vw/0.jpg)](https://www.youtube.com/watch?v=g3UhogHW9Vw)
 # Referencias
 - [Manejo de señales Digitales Robot Studio Modulo I/O - Felipe Gonzalez - Robotica Plastilina UNAL](https://youtu.be/p6UeCqhBiWE)
